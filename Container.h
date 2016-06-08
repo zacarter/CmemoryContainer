@@ -77,7 +77,7 @@ public:
     T *				Add() {
         // There are two ways to do this:
         // 1) Using placement new, directly on the buffer
-        // or 2) By allocating the object on the stack and then copying it to our buffer
+        // 2) By allocating the object on the stack and then copying it to our buffer
         // The benefit of using (1) is that no copying is needed
         
         // This does a linear search for an empty space
@@ -130,6 +130,7 @@ public:
         return newGuy;
     }
     /*
+    // This function is for debugging
      void			check(unsigned checkIndex)		///======	Print a string of the bitmask
      {
      printf("Check:\n");
